@@ -7,7 +7,7 @@ MEGARTD_TEMPERATURE_ADD = 0
 
 def get(stack, channel):
     i2c = I2C(scl=Pin(22), sda=Pin(21),freq=400000)
-    val = []
+
     if stack < 0 or stack > 7:
         raise ValueError('Invalid stack level')
         return
